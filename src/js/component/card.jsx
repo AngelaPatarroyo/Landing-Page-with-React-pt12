@@ -1,22 +1,20 @@
 import React from "react";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="col-12 col-sm-6 col-md-3 my-auto my-md-0">
 			<div className="card p-0 m-0 my-auto">
 				<img
-					src="https://source.unsplash.com/random/500x400"
+					src={props.img.src}
 					className="card-img-top w-1000 "
 					alt="..."
 				/>
 				<div className="card-body-fluid">
-					<h5 className="card-title text-center">
-						Card Title
-					</h5>
-					<p className="card-text text-center">
-						Hello, can you hear me? I'm in California dreaming about
-						who we used to be When we were younger and free I've
-						forgotten how it felt before the world fell at our feet
+					<h4 className="card-title text-center mt-3">
+						{props.title}
+					</h4>
+					<p className="card-text text-center p-2">
+						{props.text}
 					</p>
 				</div>
 				<div className="card-footer d-flex justify-content-center mb-5">
