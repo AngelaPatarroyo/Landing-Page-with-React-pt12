@@ -2,22 +2,26 @@ import React from "react";
 
 const Jumbotron = () => {
   return (
-    <>
-      <div className="jumbotron container mt-5">
-        <h1 className="display-4">A Warm Welcome</h1>
+    <div className="container-fluid" style={{ backgroundColor: "#F3F3F3" }}>
+    <div className="container">
+      <div className="jumbotron-fluid pt-5">
+        <h1 className="display-3">A Warm Welcome!</h1>
         <p className="lead">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. psa, ipsam,
-          eligendi, in quo sunt possimus non incidunt odit vero aliquid
-          similique quaerat nam nobis illo aspernatur vita fugiat numquam
-          repellat.
+          This is a simple hero unit, a simple jumbotron-style
+          component for calling extra attention to featured
+          content or information.
         </p>
-        <hr className="my-4" />
-        
-        <a className="btn btn-primary btn-lg" href="#" role="button">
-          Call to Action
+
+        <a
+          className="btn btn-primary btn-lg"
+          href="#"
+          role="button">
+          Call to action!
         </a>
+        <hr className="my-5"></hr>
       </div>
-    </>
+    </div>
+  </div>
   );
 };
 export default Jumbotron;
